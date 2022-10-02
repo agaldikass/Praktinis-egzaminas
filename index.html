@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="app/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="script.js" defer></script>
+    <title>Praktinis egzaminas</title>
+</head>
+<body>
+<header>
+    <nav class="container">
+        <img
+                src="./app/assets/cheshire-county-hygiene-services.svg"
+                alt="logo1"
+        />
+        <ul class="nav-flexrow">
+            <li><a class="link" href="#feature">Feature</a></li>
+            <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#pricing">Pricing</a></li>
+            <li><a class="link" href="#reviews">Reviews</a></li>
+            <li><a class="link" href="#contacts">Contacts</a></li>
+            <i id="burger" class="fa-solid fa-bars"></i>
+          </ul>
+    </nav>
+    <nav class="side-nav">
+      
+        <a class="link" href="#feature">Feature</a>
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#pricing">Pricing</a>
+        <a class="link" href="#reviews">Reviews</a>
+        <a class="link" href="#contacts">Contacts</a>
+      
+    </nav>
+</header>
+
+<main>
+    <section id="feature" class="container-hero" style="background-image: url(./app/assets/photo-1480714378408-67cf0d13bc1b.png)">
+        <div class="container">
+            <div class="content-left">
+                <img
+                        src="./app/assets/cheshire-county-hygiene-services.svg"
+                        alt="logo2"
+                />
+                <h1>Explained propriety of out perpetual to you</h1>
+                <div class="line-left"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                    suscipit. Unde doloremque adipisci quibusdam rerum. Nam ipsam
+                    nostrum voluptatibus omnis.
+                </p>
+                <div class="button">
+                    <button>DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="top">
+                    <p class="right-p">Try Your FREE Trial Today</p>
+                </div>
+                <p class="right-p2">Your details</p>
+                <div class="inputs">
+                    <div class="login">
+                        <input
+                                type="text"
+                                id="firstname"
+                                title="First Name"
+                                name="firstname"
+                                placeholder="First Name"
+                        />
+                        <input
+                                type="text"
+                                id="lastname"
+                                title="Last Name"
+                                name="lastname"
+                                placeholder="Last Name"
+                        />
+                        <input
+                                type="text"
+                                id="phonenumber"
+                                title="Phone number"
+                                name="phonenumber"
+                                placeholder="Phone number"
+                        />
+                    </div>
+                </div>
+                <p class="right-p3">Type of subscription</p>
+
+                <div class="radio">
+                    <input type="radio" name="styles" id="monthly" checked/>
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="styles" id="yearly" checked/>
+                    <label for="yearly">Yearly</label>
+                </div>
+                <div class="end">
+                    <button class="right-p4">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-social">
+        <div class="container">
+            <div class="text">
+                <h1>Social Media</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                    iste et ea autem rem dicta!
+                </p>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./app/assets/facebook-logo.svg" alt="facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./app/assets/instagram-logo.svg" alt="instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./app/assets/twitter.svg" alt="twitter"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./app/assets/pinterest.svg" alt="pinterest"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./app/assets/wifi..svg" alt="wifi"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="container-tabs" style="background-image: url(./app/assets/christoffer-engstrom-503481-unsplash.png)">
+        <div class="container">
+            <div class="buttons">
+                <div class="wrap" onclick="showTab(event, `pirmas`)">
+                    <button><span>REGISTER</span></button>
+                </div>
+                <div class="wrap" onclick="showTab(event, `antras`)">
+                    <button><span>APPLY</span></button>
+                </div>
+                <div class="wrap" onclick="showTab(event, `trecias`)">
+                    <button><span>RECEIVE</span></button>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div id="pirmas" class="tab">
+                    <div class="container">
+                        <div class="content">
+                            <h2>
+                                Tabs with soft transitioning effect. Explained propriety of
+                                out perpetual his you.
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                                amet lacus accumsan et viverra justo commodo. Proin sodales
+                                pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes. <br/><br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                            </p>
+                        </div>
+                        <div class="images">
+                            <img src="./app/assets/img1.png" alt="img1"/>
+                            <img src="./app/assets/img3.png" alt="img3"/>
+                            <img src="./app/assets/img2.png" alt="img2"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="antras" class="tab">
+                    <div class="container">
+                        <div class="content">
+                            <h2>
+                                Tabs with soft transitioning effect. Explained propriety of
+                                out perpetual his you.
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                                amet lacus accumsan et viverra justo commodo. Proin sodales
+                                pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes. <br/><br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                            </p>
+                        </div>
+                        <div class="images">
+                            <img src="./app/assets/img2.png" alt="img2"/>
+                            <img src="./app/assets/img1.png" alt="img1"/>
+                            <img src="./app/assets/img3.png" alt="img3"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="trecias" class="tab">
+                    <div class="container">
+                        <div class="content">
+                            <h2>
+                                Tabs with soft transitioning effect. Explained propriety of
+                                out perpetual his you.
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                                amet lacus accumsan et viverra justo commodo. Proin sodales
+                                pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes. <br/><br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                            </p>
+                        </div>
+                        <div class="images">
+                            <img src="./app/assets/img2.png" alt="img2"/>
+                            <img src="./app/assets/img1.png" alt="img1"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content2">
+        <div class="container">
+            <img
+                    class="big"
+                    src="./app/assets/cheshire-county-hygiene-services.svg"
+                    alt="logo3"
+            />
+            <div class="text3">
+                <h1>Erat tempor tempus erat malesuada</h1>
+                <div class="border-line"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.
+                </p>
+                <ul>
+                    <li class="container">
+                        <img
+                                class="title-img"
+                                src="./app/assets/eye-solid.svg"
+                                alt="logo3"
+                        />
+                        <div class="content">
+                            <h4>Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img
+                                class="title-img"
+                                src="./app/assets/message-svg.svg"
+                                alt="logo3"
+                        />
+                        <div class="content">
+                            <h4>Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                                amet lacus accumsan et viverra justo commodo.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="content3">
+        <div class="container">
+            <div class="textup">
+                <h2>WHY THIS IS AWESOME</h2>
+                <div class="border-line2"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <ul class="icons">
+                <li>
+                    <img src="./app/assets/facebook-logo.svg" alt="">
+                    <div class="content-text">
+                        <h4>Thoughtful Design</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./app/assets/instagram-logo.svg" alt="">
+                    <div class="content-text">
+                        <h4>Well Crafted</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./app/assets/pinterest.svg" alt="">
+                    <div class="content-text">
+                        <h4>Easy to Customize</h4>
+                        <p>
+                            Proin gravida dolor sit amet lacus accumsan et viverra.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="content4-pricing">
+        <div class="container-pricing">
+            <div class="container">
+                <div class="textup-2">
+                    <h2>PRICING OPTIONS</h2>
+                    <div class="border-line3"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="container pricing">
+                <div class="basic">
+                    <ul class="basic-top">
+                        <li class="text1">Basic</li>
+                        <li class="number"><span>$</span>0</li>
+                        <li class="size">Free for Life</li>
+                    </ul>
+                    <div class="border-green"></div>
+                    <ul class="basic-down">
+                        <li>1 GB OF SPACE</li>
+                        <li>10 GB OF BANDWIDTH</li>
+                        <li>3 WEBSITES</li>
+                        <li>BASIC CUSTOMIZATION</li>
+                        <li>WORDPRESS INTEGRATION</li>
+                        <li>EMAIL SUPPORT</li>
+                    </ul>
+                </div>
+
+                <div class="professional">
+                    <ul class="professional-top">
+                        <li class="text1">Professional</li>
+                        <li class="number"><span>$</span>19</li>
+                        <li class="size">Monthly Payment</li>
+                    </ul>
+                    <div class="border-green2">OUR MOST POPULAR</div>
+                    <ul class="professional-down">
+                        <li>5 GB OF SPACE</li>
+                        <li>50 GB OF BANDWIDTH</li>
+                        <li>12 WEBSITES</li>
+                        <li>ADVANCED CUSTOMIZATION</li>
+                        <li>WORDPRESS INTEGRATION</li>
+                        <li>EMAIL SUPPORT</li>
+                    </ul>
+                </div>
+
+                <div class="enterprise">
+                    <ul class="enterprise-top">
+                        <li class="text1">Enterprise</li>
+                        <li class="number"><span>$</span>70</li>
+                        <li class="size">Monthly Payment</li>
+                    </ul>
+                    <div class="border-green"></div>
+                    <ul class="enterprise-down">
+                        <li>UNLIMITED SPACE</li>
+                        <li>UNLIMITED BANDWIDTH</li>
+                        <li>100 WEBSITES</li>
+                        <li>ADVANCED CUSTOMIZATION</li>
+                        <li>WORDPRESS INTEGRATION</li>
+                        <li>24/7 CUSTOMER SUPPORT</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="content5-swiper">
+        <div class="container">
+            <div class="textup-3">
+                <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+                <div class="border-line4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="dialog">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.
+                        </div>
+                        <div class="wrap-item">
+                            <img src="./app/assets/avatar_2_u231.png" alt="img1"/>
+                            <div class="content-swiper">
+                                <div class="title">Jeremy H. 1</div>
+                                <div class="text">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dialog">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita..
+                        </div>
+                        <div class="wrap-item">
+                            <img src="./app/assets/avatar_2_u231.png" alt="img1"/>
+                            <div class="content-swiper">
+                                <div class="title">Jeremy H. 2</div>
+                                <div class="text">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dialog">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.
+                        </div>
+                        <div class="wrap-item ">
+                            <img src="./app/assets/avatar_2_u231.png" alt="img1"/>
+                            <div class="content-swiper">
+                                <div class="title">Jeremy H. 3</div>
+                                <div class="text">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="content6-contact">
+        <div class="container-contact">
+            <div class="textup-4">
+                <h2>CONTACT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="content-send">
+                <div class="inputs">
+                    <div class="login">
+                        <input
+                                type="text"
+                                id="firstname"
+                                title="First Name"
+                                name="firstname"
+                                placeholder="First Name"
+                        />
+                        <input
+                                type="text"
+                                id="lastname"
+                                title="Last Name"
+                                name="lastname"
+                                placeholder="Last Name"
+                        />
+                        <input
+                                type="text"
+                                id="phonenumber"
+                                title="Phone number"
+                                name="phonenumber"
+                                placeholder="Phone number"
+                        />
+                    </div>
+                </div>
+                <div class="radio1">
+                    <input type="radio" name="styles" id="personal" checked/>
+                    <label for="personal">PERSONAL</label>
+                    <input type="radio" name="styles" id="company" checked/>
+                    <label for="company">COMPANY</label>
+                </div>
+                <div class="end end2">
+                    <button class="right-p5">SEND</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer container">
+          <ul class="social">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./app/assets/facebook-logo.svg" alt="facebook"/>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./app/assets/instagram-logo.svg" alt="instagram"/>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./app/assets/twitter.svg" alt="twitter"/>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./app/assets/pinterest.svg" alt="pinterest"/>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./app/assets/wifi..svg" alt="wifi"/>
+                </a>
+            </li>
+        </ul>
+            
+
+
+            <p>© 2019 Cheshire County</p>
+        </div>
+
+    </footer>
+
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+</body>
+</html>
